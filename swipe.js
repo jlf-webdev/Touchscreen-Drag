@@ -28,8 +28,8 @@ function touchEventHandlers() {
     ctn.innerText = "touch handler activated"
     function onTouchStart(e) {
         e.preventDefault();
-        ctn.innerText = e.touch[0];
-        ctn.innerText = `X : ${e.touch[0].pageX} - Y : ${e.touch[0].pageY}`;
+        ctn.innerText = e.touches[0];
+        ctn.innerText = `X : ${e.touches[0].pageX} - Y : ${e.touches[0].pageY}`;
         //console.log({ x : e.touch[0].pageX, y : e.touch[0].pageY});
         body.addEventListener('touchmove', onTouchMove);
     }
@@ -37,7 +37,7 @@ function touchEventHandlers() {
     function onTouchMove(e) {
         ctn.innerText = 'Moving';
         //console.log({ x : e.touch[0].pageX, y : e.touch[0].pageY});
-        ctn.innerText = `X : ${e.touch[0].pageX} - Y : ${e.touch[0].pageY}`;
+        ctn.innerText = `X : ${e.touches[0].pageX} - Y : ${e.touches[0].pageY}`;
     }
 
     function onTouchEnd() {
