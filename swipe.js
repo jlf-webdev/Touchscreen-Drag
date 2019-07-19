@@ -43,8 +43,8 @@ function touchEventHandlers() {
     }
 
     body.addEventListener('touchstart', onTouchStart);
-    body.addEventListener('touchend', onTouchEnd);
-    body.addEventListener('touchcancel', onTouchEnd);
+    //body.addEventListener('touchend', onTouchEnd);
+    //body.addEventListener('touchcancel', onTouchEnd);
 }
 
 //mouseEventHandlers();
