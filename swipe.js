@@ -24,9 +24,10 @@ function mouseEventHandlers() {
     body.addEventListener('mouseup', onMouseUp);
 }
 
-function touchEventHandlers(e) {
+function touchEventHandlers() {
     ctn.innerText = "touch handler activated"
     function onTouchStart(e) {
+        e.preventDefault();
         ctn.innerText = 'Touched';
         ctn.innerText = `X : ${e.touch[0].pageX} - Y : ${e.touch[0].pageY}`;
         //console.log({ x : e.touch[0].pageX, y : e.touch[0].pageY});
