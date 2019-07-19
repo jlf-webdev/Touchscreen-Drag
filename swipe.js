@@ -24,7 +24,7 @@ function mouseEventHandlers() {
     body.addEventListener('mouseup', onMouseUp);
 }
 
-function touchEventHandlers() {
+function touchEventHandlers(e) {
     ctn.innerText = "touch handler activated"
     function onTouchStart(e) {
         ctn.innerText = 'Touched';
