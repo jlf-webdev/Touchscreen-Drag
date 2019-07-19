@@ -35,6 +35,7 @@ function touchEventHandlers() {
     }
 
     function onTouchMove(e) {
+        ctn.innerText = 'Moving';
         //console.log({ x : e.touch[0].pageX, y : e.touch[0].pageY});
         ctn.innerText = `X : ${e.touch[0].pageX} - Y : ${e.touch[0].pageY}`;
     }
